@@ -93,7 +93,6 @@
 			border-radius: 10px;     /* Optional: Adds rounded corners */
 		}
 
-
         .works ul {
             list-style: none;
             padding: 0;
@@ -196,43 +195,46 @@
     		height: auto;     /* Maintains the image's aspect ratio */
 	}
 	
-    	@media only screen and (max-width: 768px) {
-    .sidebar {
-        display: none;
-    }
+    /* Mobile View */
+    @media only screen and (max-width: 768px) {
+        .sidebar {
+            display: none; /* Hide sidebar on mobile */
+        }
 
-    .author-header, .about-section {
-        display: block;
-        width: 100%;
-        text-align: center;
-        padding: 20px;
-        background-color: #28292b;
-        color: white;
-    }
+        .author-header, .about-section {
+            display: block;
+            width: 100%;
+            text-align: center;
+            padding: 20px;
+            background-color: #28292b;
+            color: white;
+        }
 
-    .social-media {
-        text-align: center;
-        padding: 15px;
-    }
+        .social-media {
+            text-align: center;
+            padding: 15px;
+        }
 
-    .main-content {
-        width: 100%; 
-        padding: 15px;
-    }
+        .main-content {
+            width: 100%; 
+            padding: 15px;
+        }
 
-    .book-covers {
-        flex-direction: column;
-    }
+        .book-covers {
+            flex-direction: column;
+        }
 
-    .book {
-        width: 100%; 
-        margin-bottom: 20px;
+        .book {
+            width: 100%; 
+            margin-bottom: 20px;
+        }
     }
-}
-
     </style>
 </head>
-<div class="author-header">
+<body> <!-- Added missing body tag -->
+
+    <!-- Author Header and About Section moved out of sidebar -->
+    <div class="author-header">
         <h1>K S Logan</h1>
     </div>
 
@@ -265,11 +267,11 @@
                     <a href="https://read.amazon.com/kp/embed?linkCode=kpd&ref_=k4w_oembed_oSi3FL2JeJj2kp&asin=B07YN2JVYP&tag=kpembed-20&amazonDeviceType=A2CLFWBIMVSE9N&from=Bookcard&preview=newtab" target="_blank">
                         <img src="maggys-pen-cover.jpg" alt="Maggy's Pen">
                     </a>
-                    <h3>Maggy's Pen</h3>
+                        <h3>Maggy's Pen</h3>
                     <p>He is convinced he's destined for greatness but no one else sees it. Just when all hope seems lost he finds a special object that helps him uncover his unique talents...</p>
                     <div class="buttons">
-                        <a href="https://www.amazon.com/Maggys-Pen-K-S-Logan-ebook/dp/B07YN2JVYP/ref=sr_1_1?crid=6P76CJ6U1IV8&dib=eyJ2IjoiMSJ9.QpFL096ZWgf6uJY9JsPw_A.wpgySd6omM5vmnBQGB_bEhQszeKFO-wh8rP0wH_gF80&dib_tag=se&keywords=maggys+pen&qid=1728865042&s=digital-text&sprefix=maggys+pe%2Cdigital-text%2C173&sr=1-1" target="_blank">Buy</a>
-                        <a href="https://read.amazon.com/kp/embed?linkCode=kpd&ref_=k4w_oembed_oSi3FL2JeJj2kp&asin=B07YN2JVYP&tag=kpembed-20&amazonDeviceType=A2CLFWBIMVSE9N&from=Bookcard&preview=newtab" target="_blank">Preview</a>
+                        <a href="https://www.amazon.com/Maggys-Pen-K-S-Logan-ebook/dp/B07YN2JVYP/ref=sr_1_1?crid=6P76CJ6U1IV8&keywords=maggys+pen&qid=1728865042&s=digital-text&sr=1-1" target="_blank">Buy</a>
+                        <a href="https://read.amazon.com/kp/embed?linkCode=kpd&ref_=k4w_oembed_oSi3FL2JeJj2kp&asin=B07YN2JVYP&preview=newtab" target="_blank">Preview</a>
                     </div>
                 </div>
             </div>
@@ -293,3 +295,4 @@
 
 </body>
 </html>
+
