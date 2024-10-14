@@ -11,11 +11,9 @@
             background-color: #f4f4f4;
             margin: 0;
             padding: 0;
-            display: flex;
-            flex-direction: row;
         }
 
-        /* Sidebar layout for desktop */
+        /* Sidebar for desktop */
         .sidebar {
             width: 25%;
             padding: 20px;
@@ -23,22 +21,21 @@
             color: white;
             border-right: 1px solid #ddd;
             text-align: center;
+            display: block; /* Visible on desktop */
         }
 
-        .sidebar h2 {
+        .sidebar h2, .sidebar .author-name {
             color: white;
         }
 
         .author-name {
             font-size: 1.8em;
             margin-top: 10px;
-            color: white;
             margin-bottom: 50px;
         }
 
         .about {
-            text-align: center;
-            margin-top: 20px;
+            text-align: left;
             color: white;
             margin-bottom: 50px;
         }
@@ -46,8 +43,7 @@
         .social-media ul {
             list-style: none;
             padding: 0;
-            margin-top: 20px;
-            margin-bottom: 50px;
+            margin: 0;
         }
 
         .social-media ul li {
@@ -80,9 +76,7 @@
         .works h2 {
             color: white;
             border-bottom: 2px solid #333;
-            padding-bottom: 5px;
             text-align: center;
-            font-size: 2em;
             margin-bottom: 20px;
         }
 
@@ -101,33 +95,8 @@
 
         .book {
             width: 45%;
-            margin-bottom: 20px;
             text-align: center;
-            border: 1px solid #ddd;
-            padding: 10px;
             background-color: #f9f9f9;
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
-        }
-
-        .book img {
-            width: 100%;
-            height: auto;
-            max-width: 200px;
-            object-fit: cover;
-            margin-bottom: 10px;
-        }
-
-        .book h3 {
-            margin: 10px 0;
-            font-size: 1.5em;
-        }
-
-        .book p {
-            font-size: 1em;
-            color: #333;
-            flex-grow: 1;
         }
 
         .buttons {
@@ -135,28 +104,28 @@
         }
 
         .buttons a {
-            display: inline-block;
             padding: 10px 20px;
-            margin: 5px;
             background-color: #1e90ff;
             color: #fff;
             text-decoration: none;
             border-radius: 5px;
         }
 
-        .buttons a:hover {
-            background-color: #0056b3;
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            position: relative;
+            bottom: 0;
+            width: 100%;
         }
 
-        img {
-            max-width: 100%;
-            height: auto;
-        }
-
-        /* Mobile View */
+        /* Mobile Styles */
         @media only screen and (max-width: 768px) {
             body {
                 flex-direction: column;
+                display: block;
             }
 
             .sidebar {
@@ -165,16 +134,10 @@
 
             .author-header, .about-section {
                 display: block;
-                width: 100%;
                 text-align: center;
                 padding: 20px;
                 background-color: #28292b;
                 color: white;
-            }
-
-            .social-media {
-                text-align: center;
-                padding: 15px;
             }
 
             .main-content {
@@ -188,14 +151,13 @@
 
             .book {
                 width: 100%;
-                margin-bottom: 20px;
             }
         }
     </style>
 </head>
 <body>
 
-    <!-- Sidebar for Desktop View -->
+    <!-- Sidebar for Desktop -->
     <aside class="sidebar">
         <div class="profile-pic">
             <img src="profile-picture.png" alt="Profile Picture of K S Logan">
@@ -206,7 +168,6 @@
             <p>K S Logan is a Special Needs Teaching Assistant as well as a Published Author. She enjoys writing mystery, suspense, and thriller fiction, short fiction, and poetry. K S Logan resides in Atlantic Canada with her husband and energetic Labrador, Duke.</p>
         </section>
         <section class="social-media">
-            <h2>Follow Me</h2>
             <ul>
                 <li><a href="https://www.facebook.com/ks.logan.754" target="_blank"><img src="facebook-icon.png" alt="Facebook"></a></li>
                 <li><a href="https://www.instagram.com/ksloganauthor" target="_blank"><img src="instagram-icon.png" alt="Instagram"></a></li>
@@ -215,7 +176,7 @@
         </section>
     </aside>
 
-    <!-- Author Header and About Section moved out of sidebar -->
+    <!-- Author Header and About Section for Mobile -->
     <div class="author-header">
         <h1>K S Logan</h1>
     </div>
@@ -231,47 +192,35 @@
             <h2>My Works</h2>
             <div class="book-covers">
                 <div class="book">
-                    <a href="https://read.amazon.com/kp/embed?linkCode=kpd&ref_=k4w_oembed_z4K7ZOnFHEcGYD&asin=1777214912&tag=kpembed-20&amazonDeviceType=A2CLFWBIMVSE9N&from=Bookcard&preview=newtab" target="_blank">
+                    <a href="https://read.amazon.com/kp/embed?linkCode=kpd&ref_=k4w_oembed_z4K7ZOnFHEcGYD&asin=1777214912" target="_blank">
                         <img src="inheriting-evil-cover.jpg" alt="Inheriting Evil">
                     </a>
                     <h3>Inheriting Evil</h3>
-                    <p>Struggling book store owner, Grace Calhoun, receives news of her mother’s ill health in Scotland. She must leave England and travel back to the home and family she hasn’t seen in twenty years...</p>
+                    <p>Struggling book store owner, Grace Calhoun, receives news of her mother’s ill health in Scotland...</p>
                     <div class="buttons">
-                        <a href="https://www.amazon.com/dp/B0895ZQYVF?ref_=k4w_oembed_z4K7ZOnFHEcGYD&tag=kpembed-20&linkCode=kpd" target="_blank">Buy</a>
-                        <a href="https://read.amazon.com/kp/embed?linkCode=kpd&ref_=k4w_oembed_z4K7ZOnFHEcGYD&asin=1777214912&tag=kpembed-20&amazonDeviceType=A2CLFWBIMVSE9N&from=Bookcard&preview=newtab" target="_blank">Preview</a>
+                        <a href="https://www.amazon.com/dp/B0895ZQYVF" target="_blank">Buy</a>
+                        <a href="https://read.amazon.com/kp/embed?linkCode=kpd&ref_=k4w_oembed_z4K7ZOnFHEcGYD&asin=1777214912" target="_blank">Preview</a>
                     </div>
                 </div>
 
                 <div class="book">
-                    <a href="https://read.amazon.com/kp/embed?linkCode=kpd&ref_=k4w_oembed_oSi3FL2JeJj2kp&asin=B07YN2JVYP&tag=kpembed-20&amazonDeviceType=A2CLFWBIMVSE9N&from=Bookcard&preview=newtab" target="_blank">
+                    <a href="https://read.amazon.com/kp/embed?linkCode=kpd&asin=B07YN2JVYP" target="_blank">
                         <img src="maggys-pen-cover.jpg" alt="Maggy's Pen">
                     </a>
-                                        <h3>Maggy's Pen</h3>
-                    <p>He is convinced he's destined for greatness but no one else sees it. Just when all hope seems lost, he finds a special object that helps him uncover his unique talents. But with that also comes dark consequences. Is Jason willing to pay the ultimate price for success? What will he become in the process?</p>
+                    <h3>Maggy's Pen</h3>
+                    <p>Jason is convinced he's destined for greatness, but with success comes dark consequences...</p>
                     <div class="buttons">
-                        <a href="https://www.amazon.com/Maggys-Pen-K-S-Logan-ebook/dp/B07YN2JVYP/ref=sr_1_1?crid=6P76CJ6U1IV8&keywords=maggys+pen&qid=1728865042&s=digital-text&sr=1-1" target="_blank">Buy</a>
-                        <a href="https://read.amazon.com/kp/embed?linkCode=kpd&ref_=k4w_oembed_oSi3FL2JeJj2kp&asin=B07YN2JVYP&preview=newtab" target="_blank">Preview</a>
+                        <a href="https://www.amazon.com/dp/B07YN2JVYP" target="_blank">Buy</a>
+                        <a href="https://read.amazon.com/kp/embed?linkCode=kpd&asin=B07YN2JVYP" target="_blank">Preview</a>
                     </div>
                 </div>
             </div>
         </section>
     </div>
 
-    <!-- Social Media Links -->
-    <section class="social-media">
-        <h2>Follow Me</h2>
-        <ul>
-            <li><a href="https://www.facebook.com/ks.logan.754" target="_blank"><img src="facebook-icon.png" alt="Facebook"></a></li>
-            <li><a href="https://www.instagram.com/ksloganauthor" target="_blank"><img src="instagram-icon.png" alt="Instagram"></a></li>
-            <li><a href="https://www.goodreads.com/author/show/20332818.K_S_Logan" target="_blank"><img src="goodreads-icon.png" alt="Goodreads"></a></li>
-        </ul>
-    </section>
-
-    <!-- Footer -->
     <footer>
         <p>© 2024 K S Logan. All rights reserved.</p>
     </footer>
 
 </body>
 </html>
-
