@@ -197,58 +197,51 @@
 	}
 	
     	@media only screen and (max-width: 768px) {
-        body {
-            flex-direction: column;
-        }
-	
-	book-img img {
-        width: 100%;  /* Make it take full width of its container */
-        height: auto; /* Keep the aspect ratio */
-	}
-
-        .sidebar {
-            width: 100%;  /* Sidebar takes full width */
-            padding: 15px;
-            text-align: center;
-	    position: relative;
-        }
-	
-	.profile-pic {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin-bottom: 20px;
-        }
-
-	.profile-pic img {
-        width: 120px;  /* Smaller image for mobile */
-        height: 120px;
-        border-radius: 50%;
-        object-fit: cover;
-        display: block;
+    	body {
+        	flex-direction: column;
     	}
 
-        .main-content {
-            width: 100%;  /* Main content takes full width */
-            padding: 15px;
-        }
+    	.sidebar {
+       	 	width: 100%;  /* Sidebar takes full width */
+        	padding: 15px;
+        	text-align: center;
+    	}
 
-	.works {
-            padding: 15px; 
-	}
+    	.profile-pic {
+       		margin-bottom: 20px;
+        	display: block;
+    	}
 
-        .social-media ul {
-            justify-content: center;
-        }
+    	.profile-pic img {
+        	width: 120px;  /* Adjust size for mobile */
+        	height: 120px;
+        	border-radius: 50%;
+        	object-fit: cover;
+        	margin: 0 auto;  /* Centers the profile picture */
+    	}
 
-        .book {
-            width: 100%;  /* Books stack vertically */
-	    margin-bottom: 20px;
-        }
+    	.main-content {
+        	width: 100%;  /* Main content takes full width */
+        	padding: 15px;
+    	}
 
-	.book-covers {
-        flex-direction: column; /* Makes the books stack in one column */
-	}
+    	.book-img img {
+        	width: 100%;  /* Full width of container */
+        	height: auto; /* Maintain aspect ratio */
+    	}
+
+    	.book-covers {
+        	flex-direction: column;  /* Stack the books vertically */
+    	}
+
+    	.book {
+        	width: 100%;  /* Books take full width on mobile */
+        	margin-bottom: 20px;
+    	}
+
+    	.works {
+        	padding: 15px;
+    }
     }
     </style>
 </head>
