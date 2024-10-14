@@ -190,6 +190,29 @@
         .buttons a:hover {
             background-color: #0056b3;
         }
+	@media only screen and (max-width: 768px) {
+        body {
+            flex-direction: column;
+        }
+
+        .sidebar {
+            width: 100%;  /* Sidebar takes full width */
+            padding: 10px;
+            text-align: center;
+        }
+
+        .main-content {
+            width: 100%;  /* Main content takes full width */
+            padding: 10px;
+        }
+
+        .social-media ul {
+            justify-content: center;
+        }
+
+        .book {
+            width: 100%;  /* Books stack vertically */
+        }    
     </style>
 </head>
 <body>
