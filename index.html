@@ -202,22 +202,31 @@
     	}
 
     	.sidebar {
-       	 	width: 100%;  /* Sidebar takes full width */
-        	padding: 15px;
-        	text-align: center;
+       	 	.sidebar {
+        	display: none;
     	}
+		
 
     	.profile-pic {
-       		margin-bottom: 20px;
-        	display: block;
+       		display: none;
     	}
 
-    	.profile-pic img {
-        	width: 120px;  /* Adjust size for mobile */
-        	height: 120px;
-        	border-radius: 50%;
-        	object-fit: cover;
-        	margin: 0 auto;  /* Centers the profile picture */
+        .author-header, .about-section {
+        	display: block;
+        	width: 100%;
+        	text-align: center;
+        	padding: 20px 15px;
+        	background-color: #28292b;
+        	color: white;	
+    	}
+
+	.about-section {
+        	padding: 15px;
+	}
+
+	.social-media {
+        	text-align: center;
+        	padding: 15px;
     	}
 
     	.main-content {
@@ -245,27 +254,14 @@
     }
     </style>
 </head>
-<body>
+<div class="author-header">
+        <h1>K S Logan</h1>
+    </div>
 
-    <!-- Sidebar -->
-    <aside class="sidebar">
-        <div class="profile-pic">
-            <img src="profile-picture.png" alt="Profile Picture of K S Logan">
-        </div>
-        <h1 class="author-name">K S Logan</h1>
-        <section class="about">
-            <h2>About the Author</h2>
-            <p>K S Logan is a Special Needs Teaching Assistant as well as a Published Author. She enjoys writing mystery, suspense, and thriller fiction, short fiction, and poetry. K S Logan resides in Atlantic Canada with her husband and energetic Labrador, Duke.</p>
-        </section>
-        <section class="social-media">
-            <h2>Follow Me</h2>
-            <ul>
-                <li><a href="https://www.facebook.com/ks.logan.754" target="_blank"><img src="facebook-icon.png" alt="Facebook"></a></li>
-                <li><a href="https://www.instagram.com/ksloganauthor" target="_blank"><img src="instagram-icon.png" alt="Instagram"></a></li>
-                <li><a href="https://www.goodreads.com/author/show/20332818.K_S_Logan" target="_blank"><img src="goodreads-icon.png" alt="Goodreads"></a></li>
-            </ul>
-        </section>
-    </aside>
+    <section class="about-section">
+        <h2>About the Author</h2>
+        <p>K S Logan is a Special Needs Teaching Assistant as well as a Published Author. She enjoys writing mystery, suspense, and thriller fiction, short fiction, and poetry. K S Logan resides in Atlantic Canada with her husband and energetic Labrador, Duke.</p>
+    </section>
 
     <!-- Main content -->
     <div class="main-content">
@@ -280,7 +276,7 @@
                         <img src="inheriting-evil-cover.jpg" alt="Inheriting Evil">
                     </a>
                     <h3>Inheriting Evil</h3>
-                    <p>Struggling book store owner, Grace Calhoun, receives news of her mother’s ill health in Scotland. She must leave England and travel back to the home and family she hasn’t seen in twenty years. While there, she begins to suspect foul play at the hands of her surly sister and her lazy, less than ambitious son. Grace must navigate her way through a massive inheritance, deep family secrets, shocking betrayal and possibly even murder!</p>
+                    <p>Struggling book store owner, Grace Calhoun, receives news of her mother’s ill health in Scotland. She must leave England and travel back to the home and family she hasn’t seen in twenty years...</p>
                     <div class="buttons">
                         <a href="https://www.amazon.com/dp/B0895ZQYVF?ref_=k4w_oembed_z4K7ZOnFHEcGYD&tag=kpembed-20&linkCode=kpd" target="_blank">Buy</a>
                         <a href="https://read.amazon.com/kp/embed?linkCode=kpd&ref_=k4w_oembed_z4K7ZOnFHEcGYD&asin=1777214912&tag=kpembed-20&amazonDeviceType=A2CLFWBIMVSE9N&from=Bookcard&preview=newtab" target="_blank">Preview</a>
@@ -292,7 +288,7 @@
                         <img src="maggys-pen-cover.jpg" alt="Maggy's Pen">
                     </a>
                     <h3>Maggy's Pen</h3>
-                    <p>He is convinced he's destined for greatness but no one else sees it. Just when all hope seems lost he finds a special object that helps him uncover his unique talents. But with that also comes dark consequences. Is Jason willing to pay the ultimate price for success? What will he become in the process?</p>
+                    <p>He is convinced he's destined for greatness but no one else sees it. Just when all hope seems lost he finds a special object that helps him uncover his unique talents...</p>
                     <div class="buttons">
                         <a href="https://www.amazon.com/Maggys-Pen-K-S-Logan-ebook/dp/B07YN2JVYP/ref=sr_1_1?crid=6P76CJ6U1IV8&dib=eyJ2IjoiMSJ9.QpFL096ZWgf6uJY9JsPw_A.wpgySd6omM5vmnBQGB_bEhQszeKFO-wh8rP0wH_gF80&dib_tag=se&keywords=maggys+pen&qid=1728865042&s=digital-text&sprefix=maggys+pe%2Cdigital-text%2C173&sr=1-1" target="_blank">Buy</a>
                         <a href="https://read.amazon.com/kp/embed?linkCode=kpd&ref_=k4w_oembed_oSi3FL2JeJj2kp&asin=B07YN2JVYP&tag=kpembed-20&amazonDeviceType=A2CLFWBIMVSE9N&from=Bookcard&preview=newtab" target="_blank">Preview</a>
@@ -302,6 +298,17 @@
         </section>
     </div>
 
+    <!-- Social Media Links -->
+    <section class="social-media">
+        <h2>Follow Me</h2>
+        <ul>
+            <li><a href="https://www.facebook.com/ks.logan.754" target="_blank"><img src="facebook-icon.png" alt="Facebook"></a></li>
+            <li><a href="https://www.instagram.com/ksloganauthor" target="_blank"><img src="instagram-icon.png" alt="Instagram"></a></li>
+            <li><a href="https://www.goodreads.com/author/show/20332818.K_S_Logan" target="_blank"><img src="goodreads-icon.png" alt="Goodreads"></a></li>
+        </ul>
+    </section>
+
+    <!-- Footer -->
     <footer>
         <p>© 2024 K S Logan. All rights reserved.</p>
     </footer>
