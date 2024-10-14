@@ -212,12 +212,20 @@
             text-align: center;
 	    position: relative;
         }
+	
+	.profile-pic {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 20px;
+        }
 
 	.profile-pic img {
         width: 100px;  /* Smaller image for mobile */
         height: 100px;
-        margin: 0 auto 20px;  /* Center the image with auto margin */
-        display: block;  /* Ensure the image is treated as a block element */
+        border-radius: 50%;
+        object-fit: cover;
+        display: block;
     	}
 
         .main-content {
