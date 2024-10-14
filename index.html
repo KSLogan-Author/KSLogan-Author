@@ -231,11 +231,13 @@
     	}
 
     	.book-covers {
-        	flex-direction: column;  /* Stack the books vertically */
+        	flex-direction: row;  /* Make books display side by side */
+        	flex-wrap: wrap;      /* Wrap to a new line if there's no space */
+        	justify-content: space-between;
     	}
 
     	.book {
-        	width: 100%;  /* Books take full width on mobile */
+        	width: 45%;  /* e each book take 45% of the container width */
         	margin-bottom: 20px;
     	}
 
