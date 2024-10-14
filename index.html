@@ -192,7 +192,7 @@
             background-color: #0056b3;
         }
 	
-    @media only screen and (max-width: 768px) {
+    	@media only screen and (max-width: 768px) {
         body {
             flex-direction: column;
         }
@@ -205,7 +205,7 @@
 
         .main-content {
             width: 100%;  /* Main content takes full width */
-            padding: 10px;
+            padding: 15px;
         }
 
         .social-media ul {
@@ -214,7 +214,12 @@
 
         .book {
             width: 100%;  /* Books stack vertically */
+	    margin-bottom: 20px;
         }
+
+	.book-covers {
+        flex-direction: column; /* Makes the books stack in one column */
+	}
     }
     </style>
 </head>
