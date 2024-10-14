@@ -20,34 +20,34 @@
             width: 25%;
             padding: 20px;
             background-color: #28292b;
-			color: white;
+            color: white;
             border-right: 1px solid #ddd;
             text-align: center;
         }
-		
-		.sidebar h2 {
-			color: white;
-		}
+
+        .sidebar h2 {
+            color: white;
+        }
 
         .author-name {
             font-size: 1.8em;
             margin-top: 10px;
             color: white;
-			margin-bottom: 50px;
+            margin-bottom: 50px;
         }
 
         .about {
             text-align: left;
             margin-top: 20px;
-			color: white;
-			margin-bottom: 50px;
+            color: white;
+            margin-bottom: 50px;
         }
 
         .social-media ul {
             list-style: none;
             padding: 0;
             margin-top: 20px;
-			margin-bottom: 50px;
+            margin-bottom: 50px;
         }
 
         .social-media ul li {
@@ -82,17 +82,16 @@
             border-bottom: 2px solid #333;
             padding-bottom: 5px;
             text-align: center;
-			font-size: 2em;
-			margin-bottom: 20px;
+            font-size: 2em;
+            margin-bottom: 20px;
         }
-		
-		.works {
-			border: 3px solid white; /* Adds a white border */
-			padding: 20px;           /* Adds some padding inside the border */
-			background-color: #333;  /* Optional: You can add a background color inside the border */
-			border-radius: 10px;     /* Optional: Adds rounded corners */
-		}
 
+        .works {
+            border: 3px solid white;
+            padding: 20px;
+            background-color: #333;
+            border-radius: 10px;
+        }
 
         .works ul {
             list-style: none;
@@ -113,14 +112,14 @@
         }
 
         footer {
-			background-color: #333;
-			color: white;
-			text-align: center;
-			padding: 10px 0;
-			position: fixed;
-			width: 100%;
-			bottom: 0;
-		}
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
 
         .book-img {
             text-align: center;
@@ -189,6 +188,62 @@
 
         .buttons a:hover {
             background-color: #0056b3;
+        }
+
+        /* Responsive styles */
+        @media screen and (max-width: 768px) {
+            body {
+                flex-direction: column;
+            }
+
+            .sidebar {
+                width: 100%;
+                padding: 15px;
+                border-right: none;
+                border-bottom: 1px solid #ddd;
+            }
+
+            .main-content {
+                padding: 15px;
+            }
+
+            .book-covers {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .book {
+                width: 100%;
+                margin-bottom: 20px;
+            }
+
+            .book img {
+                max-width: 100%;
+                height: auto;
+            }
+
+            .profile-pic img {
+                width: 100px;
+                height: 100px;
+            }
+
+            .author-name {
+                font-size: 1.5em;
+            }
+
+            .works h2 {
+                font-size: 1.8em;
+            }
+
+            .buttons a {
+                width: calc(50% - 10px);
+                margin: 5px;
+            }
+
+            footer {
+                position: static;
+                width: 100%;
+            }
         }
     </style>
 </head>
