@@ -210,7 +210,15 @@
             width: 100%;  /* Sidebar takes full width */
             padding: 15px;
             text-align: center;
+	    position: relative;
         }
+
+	.profile-pic img {
+        width: 120px;  /* Smaller image for mobile */
+        height: 120px;
+        margin: 0 auto 20px;  /* Center the image with auto margin */
+        display: block;  /* Ensure the image is treated as a block element */
+    	}
 
         .main-content {
             width: 100%;  /* Main content takes full width */
