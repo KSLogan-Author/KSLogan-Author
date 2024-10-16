@@ -183,6 +183,22 @@ footer {
     margin-bottom: 10px;
 }
 
+#inheriting-evil-cover {
+    transition: opacity 0.3s ease;
+}
+
+#inheriting-evil-cover:hover {
+    content: url('inheriting-evil-cover-alt.png');
+}
+
+#maggys-pen-cover {
+    transition: opacity 0.3s ease;
+}
+
+#maggys-pen-cover:hover {
+    content: url('maggys-pen-cover-alt.png');
+}
+
 .book h3 { font-family: 'Cinzel', serif; font-size: 2em;
 }
 
