@@ -7,6 +7,9 @@
     <!-- SEO Meta Tags -->
     <meta name="description" content="K S Logan - Author of mystery, suspense, thriller fiction, and poetry. Check out her latest works including 'Inheriting Evil' and 'Maggy’s Pen'.">
     <meta name="keywords" content="K S Logan, author, mystery, thriller, suspense, poetry, fiction">
+    <meta property="og:title" content="K S Logan - Author">
+    <meta property="og:description" content="K S Logan - Author of mystery, suspense, thriller fiction, and poetry. Check out her latest works including 'Inheriting Evil' and 'Maggy’s Pen'.">
+    <meta property="og:image" content="https://kslogan.ca/og-image.jpg">
 
     <!-- Structured Data (JSON-LD) -->
     <script type="application/ld+json">
@@ -31,6 +34,7 @@
     </script>
 
     <title>K S Logan - Author</title>
+    <link rel="stylesheet" href="styles.css">
     <style>
         body {
             font-family: 'Georgia', serif;
@@ -52,13 +56,13 @@
         }
 
         .sidebar h2 {
-            color: white;
+            color: #b22222; text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
         }
 
         .author-name {
             font-size: 1.8em;
             margin-top: 10px;
-            color: white;
+            color: #b22222; text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
             margin-bottom: 50px;
         }
 
@@ -81,6 +85,14 @@
             margin: 10px;
         }
 
+        .social-media ul li a {
+            transition: transform 0.2s;
+        }
+
+        .social-media ul li a:hover {
+            transform: scale(1.2);
+        }
+
         .social-media ul li img {
             width: 30px;
             height: 30px;
@@ -93,8 +105,8 @@
             height: 150px;
             border-radius: 50%;
             object-fit: cover;
-            border: 3px solid #ddd;
-            box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+            border: 3px solid #b22222;
+            box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
         }
 
         /* Main content */
@@ -104,8 +116,8 @@
         }
 
         .works h2 {
-            color: white;
-            border-bottom: 2px solid #333;
+            color: #b22222; text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+            border-bottom: 2px solid #b22222;
             padding-bottom: 5px;
             text-align: center;
             font-size: 2em;
@@ -113,10 +125,14 @@
         }
 
         .works {
-            border: 3px solid white;
+            border: 3px solid #b22222;
             padding: 20px;
             background-color: #333;
             border-radius: 10px;
+            margin: 0 auto;
+            width: 100%;
+            box-sizing: border-box;
+            max-width: 100%;
         }
 
         .works ul {
@@ -129,7 +145,7 @@
         }
 
         .works ul li a {
-            color: #1e90ff;
+            color: #b22222; text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
             text-decoration: none;
         }
 
@@ -150,15 +166,19 @@
         .book-img {
             text-align: center;
             margin-bottom: 20px;
+            max-width: 100%;
+            box-sizing: border-box;
         }
 
         .book-img img {
-            width: 389px;
-            height: 291px;
+            width: 100%;
+            max-width: 350px;
+            height: auto;
             object-fit: cover;
             border-radius: 40% / 20%;
             border: 2px solid #ddd;
             box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+            loading: lazy;
         }
 
         .book-covers {
@@ -168,7 +188,7 @@
         }
 
         .book {
-            width: 45%;
+            width: 42%;
             margin-bottom: 20px;
             text-align: center;
             border: 1px solid #ddd;
@@ -206,14 +226,15 @@
             display: inline-block;
             padding: 10px 20px;
             margin: 5px;
-            background-color: #1e90ff;
+            background-color: #b22222; text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
             color: #fff;
             text-decoration: none;
             border-radius: 5px;
+            transition: background-color 0.3s;
         }
 
         .buttons a:hover {
-            background-color: #0056b3;
+            background-color: #8b0000;
         }
 
         /* Responsive styles */
@@ -233,13 +254,24 @@
                 padding: 15px;
             }
 
+            .works {
+                margin: 15px;
+                padding: 20px;
+                border: 3px solid #b22222;
+                background-color: #333;
+                border-radius: 10px;
+                width: calc(100% - 30px);
+                box-sizing: border-box;
+                max-width: 100%;
+            }
+
             .book-covers {
                 flex-direction: column;
                 align-items: center;
             }
 
             .book {
-                width: 100%;
+                width: 90%;
                 margin-bottom: 20px;
             }
 
@@ -288,9 +320,9 @@
         <section class="social-media">
             <h2>Follow Me</h2>
             <ul>
-                <li><a href="https://www.facebook.com/ks.logan.754" target="_blank"><img src="facebook-icon.png" alt="Facebook"></a></li>
-                <li><a href="https://www.instagram.com/ksloganauthor" target="_blank"><img src="instagram-icon.png" alt="Instagram"></a></li>
-                <li><a href="https://www.goodreads.com/author/show/20332818.K_S_Logan" target="_blank"><img src="goodreads-icon.png" alt="Goodreads"></a></li>
+                <li><a href="https://www.facebook.com/ks.logan.754" target="_blank" aria-label="Facebook"><img src="facebook-icon.png" alt="Facebook"></a></li>
+                <li><a href="https://www.instagram.com/ksloganauthor" target="_blank" aria-label="Instagram"><img src="instagram-icon.png" alt="Instagram"></a></li>
+                <li><a href="https://www.goodreads.com/author/show/20332818.K_S_Logan" target="_blank" aria-label="Goodreads"><img src="goodreads-icon.png" alt="Goodreads"></a></li>
             </ul>
         </section>
     </aside>
@@ -310,8 +342,8 @@
                     <h3>Inheriting Evil</h3>
                     <p>Struggling book store owner, Grace Calhoun, receives news of her mother’s ill health in Scotland. She must leave England and travel back to the home and family she hasn’t seen in twenty years. While there, she begins to suspect foul play at the hands of her surly sister and her lazy, less than ambitious son. Grace must navigate her way through a massive inheritance, deep family secrets, shocking betrayal and possibly even murder!</p>
                     <div class="buttons">
-                        <a href="https://www.amazon.com/dp/B0895ZQYVF?ref_=k4w_oembed_z4K7ZOnFHEcGYD&tag=kpembed-20&linkCode=kpd" target="_blank">Buy</a>
-                        <a href="https://read.amazon.com/kp/embed?linkCode=kpd&ref_=k4w_oembed_z4K7ZOnFHEcGYD&asin=1777214912&tag=kpembed-20&amazonDeviceType=A2CLFWBIMVSE9N&from=Bookcard&preview=newtab" target="_blank">Preview</a>
+                        <a href="https://www.amazon.com/dp/B0895ZQYVF?ref_=k4w_oembed_z4K7ZOnFHEcGYD&tag=kpembed-20&linkCode=kpd" target="_blank" aria-label="Buy Inheriting Evil">Buy</a>
+                        <a href="https://read.amazon.com/kp/embed?linkCode=kpd&ref_=k4w_oembed_z4K7ZOnFHEcGYD&asin=1777214912&tag=kpembed-20&amazonDeviceType=A2CLFWBIMVSE9N&from=Bookcard&preview=newtab" target="_blank" aria-label="Preview Inheriting Evil">Preview</a>
                     </div>
                 </div>
 
@@ -322,8 +354,8 @@
                     <h3>Maggy's Pen</h3>
                     <p>He is convinced he's destined for greatness but no one else sees it. Just when all hope seems lost he finds a special object that helps him uncover his unique talents. But with that also comes dark consequences. Is Jason willing to pay the ultimate price for success? What will he become in the process?</p>
                     <div class="buttons">
-                        <a href="https://www.amazon.com/Maggys-Pen-K-S-Logan-ebook/dp/B07YN2JVYP/ref=sr_1_1?crid=6P76CJ6U1IV8&dib=eyJ2IjoiMSJ9.QpFL096ZWgf6uJY9JsPw_A.wpgySd6omM5vmnBQGB_bEhQszeKFO-wh8rP0wH_gF80&dib_tag=se&keywords=maggys+pen&qid=1728865042&s=digital-text&sprefix=maggys+pe%2Cdigital-text%2C173&sr=1-1" target="_blank">Buy</a>
-                        <a href="https://read.amazon.com/kp/embed?linkCode=kpd&ref_=k4w_oembed_oSi3FL2JeJj2kp&asin=B07YN2JVYP&tag=kpembed-20&amazonDeviceType=A2CLFWBIMVSE9N&from=Bookcard&preview=newtab" target="_blank">Preview</a>
+                        <a href="https://www.amazon.com/Maggys-Pen-K-S-Logan-ebook/dp/B07YN2JVYP/ref=sr_1_1?crid=6P76CJ6U1IV8&dib=eyJ2IjoiMSJ9.QpFL096ZWgf6uJY9JsPw_A.wpgySd6omM5vmnBQGB_bEhQszeKFO-wh8rP0wH_gF80&dib_tag=se&keywords=maggys+pen&qid=1728865042&s=digital-text&sprefix=maggys+pe%2Cdigital-text%2C173&sr=1-1" target="_blank" aria-label="Buy Maggy's Pen">Buy</a>
+                        <a href="https://read.amazon.com/kp/embed?linkCode=kpd&ref_=k4w_oembed_oSi3FL2JeJj2kp&asin=B07YN2JVYP&tag=kpembed-20&amazonDeviceType=A2CLFWBIMVSE9N&from=Bookcard&preview=newtab" target="_blank" aria-label="Preview Maggy's Pen">Preview</a>
                     </div>
                 </div>
             </div>
@@ -333,6 +365,15 @@
     <footer>
         <p>© 2024 K S Logan. All rights reserved.</p>
     </footer>
+
+    <!-- Google Analytics Script -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=YOUR_ANALYTICS_ID"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'YOUR_ANALYTICS_ID');
+    </script>
 
 </body>
 </html>
